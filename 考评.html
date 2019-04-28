@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3cschool.cn/statics/assets/foundation-5.5.3/foundation.min.css">
+    <script src="//www.w3cschool.cn/statics/assets/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//www.w3cschool.cn/statics/assets/foundation-5.5.3/js/foundation.min.js"></script>
+    <script src="//www.w3cschool.cn/statics/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .row:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+            .col-s-12 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color :#33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }body {
+             background-color: lightgreen;
+         }
+
+        @media only screen and (orientation: landscape) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>欢迎你的到来！！！</h1>
+    </div>
+
+</div>
+<div class="header">
+    <h1>世界乐园</h1>
+</div>
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">首页</a></h1>
+        </li>
+
+        <li class="toggle-topbar menu-icon"><a href="#"><span>菜单</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="left">
+            <li class="active"><a href="关于我们.html">关于我们</a></li>
+            <li class="has-dropdown">
+                <a href="#">会员</a>
+                <ul class="dropdown">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="表单.html">注册</a></li>
+                    <li class="active"><a href="#">游客访问</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</nav>
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+
+<div class="row">
+
+    <div class="col-3 col-s-3 menu">
+        <ul>
+            <li>双人游</li>
+            <li>渡蜜月</li>
+            <li>全家桶</li>
+            <li>异域风情</li>
+        </ul>
+    </div>
+
+    <div class="col-6 col-s-9">
+        <h1>The City</h1>
+        <p>哈尼亚是克里特岛查尼亚地区的首府。这座城市可分为两部分：古镇和现代城市 .</p>
+        <video width="400" controls>
+            <source src="src/mov_bbb.mp4" type="video/mp4">
+
+            <source src="https://www.w3cschool.cn/tryrun/showhtml/tryresponsive_video3/statics/demosource/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>What?</h2>
+            <p>查尼亚是克里特岛上的一座城市。</p>
+            <h2>Where?</h2>
+            <p>克里特岛是地中海中的希腊岛屿。</p>
+            <h2>How?</h2>
+            <p>你可以从整个欧洲到达查尼亚机场。 </p>
+        </div>
+    </div>
+<h1> 热线电话：3838008</h1>
+</div>
+
+
+
+<div class="footer">
+    <p>@投食加盟请加V：665151</p>
+</div>
+
+</body>
+</html>
